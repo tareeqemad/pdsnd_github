@@ -5,6 +5,7 @@ import numpy as np
 CITY_DATA = { 'new york city': 'new_york_city.csv',
               'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
+SEPARATOR = "-" * 40
 
 def get_filters():
     """
@@ -25,7 +26,7 @@ def get_filters():
     # get user input for day of week (all, monday, tuesday, ... sunday)
 
 
-    print('-'*40)
+    print(SEPARATOR)
     return city, month, day
 
 
@@ -61,7 +62,8 @@ def time_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
+
 
 
 def station_stats(df):
@@ -80,7 +82,8 @@ def station_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
+
 
 
 def trip_duration_stats(df):
@@ -96,7 +99,8 @@ def trip_duration_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
+
 
 
 def user_stats(df):
@@ -115,7 +119,8 @@ def user_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
+
 
 
 def main():
