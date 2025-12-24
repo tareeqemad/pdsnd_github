@@ -1,1 +1,3 @@
-.github/**
+﻿*.csv
+Thumbs.db
+.DS_Store
