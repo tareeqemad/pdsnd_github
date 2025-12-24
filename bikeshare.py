@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+<<<<<<< HEAD
 # Starter script used for practicing Git workflows (branches/commits/merges).
 # Data files are intentionally ignored via .gitignore.
 CITY_DATA = { 'chicago': 'chicago.csv',
@@ -8,16 +9,24 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 # second commit 
 # for review 
+=======
+
+CITY_DATA = { 'new york city': 'new_york_city.csv',
+              'chicago': 'chicago.csv',
+              'washington': 'washington.csv' }
+SEPARATOR = "-" * 40
+
+>>>>>>> refactoring
 def get_filters():
     """
-    Asks user to specify a city, month, and day to analyze.
+    Asks user to specify a city, month, and day to analyze  ** refactor.
 
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Salam ! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
 
@@ -27,7 +36,7 @@ def get_filters():
     # get user input for day of week (all, monday, tuesday, ... sunday)
 
 
-    print('-'*40)
+    print(SEPARATOR)
     return city, month, day
 
 
@@ -63,7 +72,8 @@ def time_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
+
 
 
 def station_stats(df):
@@ -82,7 +92,8 @@ def station_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
+
 
 
 def trip_duration_stats(df):
@@ -98,7 +109,8 @@ def trip_duration_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
+
 
 
 def user_stats(df):
@@ -117,7 +129,8 @@ def user_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
+
 
 
 def main():
@@ -134,6 +147,6 @@ def main():
         if restart.lower() != 'yes':
             break
 
-
+# Replace tab 
 if __name__ == "__main__":
-	main()
+    main()
