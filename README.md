@@ -21,3 +21,5 @@ The goal is to explore bikeshare data using a Python starter script.
 
 ## Notes
 CSV files are excluded from GitHub on purpose.
+
+## Usage Tips
